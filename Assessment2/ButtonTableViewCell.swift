@@ -31,7 +31,11 @@ class ButtonTableViewCell: UITableViewCell {
     var delegate: ButtonTableViewCellDelegate?
 
     @IBAction func buttonTapped(_ sender: Any) {
+        //let isChecked = ListController.sharedInstance.items[indexPath.row]
+        
     }
+    
+    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

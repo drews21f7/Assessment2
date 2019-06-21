@@ -49,11 +49,13 @@ extension ListController {
         
         alertController.addTextField { (textField) in
             textField.placeholder = "Enter your item..."
+            guard let textField = textField.text else {return}
+            ListController.sharedInstance.addItem(item: textField)
         }
         
-        let itemAdd = UIAlertAction(title: "Add", style: .default) { (_) in
-            guard let itemText = alertController.textFields?.text,
-                let item = addItem(item: UITextField) else {return}
-        }
+//        let itemAdd = UIAlertAction(title: "Add", style: .default) { (_) in
+//            guard let itemText = alertController.textField.text,
+//                let item = addItem(item: UITextField) else {return}
+//        }
     }
 }

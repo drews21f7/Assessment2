@@ -14,6 +14,9 @@ class ListTableViewController: UITableViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func addButtonTapped(_ sender: Any) {
+        
+    }
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,7 +26,11 @@ class ListTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath)
+        var cell: ButtonTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath) as? ButtonTableViewCell
+        if cell == nil {cell = ButtonTableViewCell() }
+        let item = ListController.sharedInstance.items[indexPath.row]
+        
+        cell.update(withItem: item)
 
         // Configure the cell...
 
