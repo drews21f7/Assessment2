@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--List Table View Controller-->
         <scene sceneID="sff-J9-2Qw">
             <objects>
-                <tableViewController id="GAu-II-ZYL" sceneMemberID="viewController">
+                <tableViewController id="GAu-II-ZYL" customClass="ListTableViewController" customModule="Assessment2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XGt-37-RsJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listCell" rowHeight="61" id="UIt-yL-F0X">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listCell" rowHeight="61" id="UIt-yL-F0X" customClass="ButtonTableViewCell" customModule="Assessment2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UIt-yL-F0X" id="YcL-IC-z4L">
@@ -28,7 +28,10 @@
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t6-MX-10J">
                                             <rect key="frame" x="360" y="13" width="34" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button" image="incomplete"/>
+                                            <state key="normal" image="incomplete"/>
+                                            <connections>
+                                                <action selector="buttonTapped:" destination="UIt-yL-F0X" eventType="touchUpInside" id="tB3-AE-GDn"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Uj-dd-Lg2">
                                             <rect key="frame" x="20" y="15" width="60" height="30"/>
@@ -39,6 +42,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="isCheckedButton" destination="9t6-MX-10J" id="kSR-iG-HtT"/>
+                                    <outlet property="listItemLabel" destination="1Uj-dd-Lg2" id="pFF-AX-fY0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

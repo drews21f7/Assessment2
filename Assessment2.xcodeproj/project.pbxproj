@@ -16,6 +16,7 @@
 		3A00E80A22BD2DAB0085DA0B /* List+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E80922BD2DAB0085DA0B /* List+Convenience.swift */; };
 		3A00E80C22BD2E540085DA0B /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E80B22BD2E540085DA0B /* ListController.swift */; };
 		3A00E80F22BD2E710085DA0B /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E80E22BD2E710085DA0B /* ListTableViewController.swift */; };
+		3A00E81222BD3EDB0085DA0B /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E81122BD3EDB0085DA0B /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3A00E80922BD2DAB0085DA0B /* List+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Convenience.swift"; sourceTree = "<group>"; };
 		3A00E80B22BD2E540085DA0B /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		3A00E80E22BD2E710085DA0B /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		3A00E81122BD3EDB0085DA0B /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				3A00E80D22BD2E570085DA0B /* Model Controller */,
 				3A00E80422BD2C180085DA0B /* Models */,
 				3A00E80622BD2C300085DA0B /* Views */,
+				3A00E81122BD3EDB0085DA0B /* ButtonTableViewCell.swift */,
 			);
 			path = Assessment2;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				3A00E80A22BD2DAB0085DA0B /* List+Convenience.swift in Sources */,
 				3A00E80F22BD2E710085DA0B /* ListTableViewController.swift in Sources */,
 				3A00E7F822BD2B210085DA0B /* Assessment2.xcdatamodeld in Sources */,
+				3A00E81222BD3EDB0085DA0B /* ButtonTableViewCell.swift in Sources */,
 				3A00E7F022BD2B210085DA0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
